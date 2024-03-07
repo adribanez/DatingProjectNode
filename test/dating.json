@@ -1,0 +1,70 @@
+[{
+    "userid": "1",
+    "name": "David",
+    "surname":"Muñoz",
+    "zodiacsign": "Virgo",
+    "country": "España",
+    "city": "Madrid",
+    "age": "29",
+    "gender": "Hombre",
+    "preferences":"Mujeres",
+    "interests":"Salir, Leer, Fiesta, Montaña"
+  },
+  {
+    "userid": "2",
+    "name": "Elena",
+    "surname":"Garcia",
+    "zodiacsign": "Piscis",
+    "country": "España",
+    "city": "Sevilla",
+    "age": "30",
+    "gender": "Mujer",
+    "preferences":"Hombres",
+    "interests":"Siesta, Gimnasio, Fiesta, Playa"
+
+  },
+  
+  {
+    
+    "userid": "3",
+    "name": "Javier",
+    "surname":"Lara",
+    "zodiacsign": "Acuario",
+    "country": "España",
+    "city": "Albacete",
+    "age": "35",
+    "gender": "Hombre",
+    "preferences":"Hombres",
+    "interests":"Copas, Gimnasio, Dormir, Montaña"
+
+  },
+
+  {
+    
+     "userid": "3",
+     "name": "Ana",
+    "surname":"Lara",
+    "zodiacsign": "Acuario",
+    "country": "España",
+    "city": "Albacete",
+    "age": "35",
+    "gender": "Hombre",
+    "preferences":"Hombres",
+    "interests":"Copas, Gimnasio, Dormir, Montaña"
+
+  },
+  {
+    
+    "userid": "4",
+    "name": "Linda",
+   "surname":"Jackson",
+   "zodiacsign": "Acuario",
+   "country": "España",
+   "city": "Cuenca",
+   "age": "19",
+   "gender": "Mujer",
+   "preferences":"Mujeres",
+   "interests":"Ejercicio, Aire Libre, Fiesta"
+   
+
+ }] 
