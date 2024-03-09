@@ -1,7 +1,7 @@
 const express = require("express");
-// el router es el objeto que guarda todas las rutas
+
 const clientRouter = express.Router();
-// instanciamos al controlador para usar las funciones relativas a cada ruta
+
 const {
   getClient,
   getClients,
@@ -15,21 +15,19 @@ const { isAuth } = require("../middlewares/auth.middleware");
 
 // RUTAS
 
-//nombreDelRouter.get('endpoint', <nombreDeLaFuncion)
-
-// OBTENER UNA CANCION
+// OBTENER UNA PERSONA
 clientRouter.get("/:id", getClient);
 
-// OBTENER TODAS LAS CANCINES
+// OBTENER TODAS LAS PERSONAS
 clientRouter.get("/", getClients);
 
-// CREAR UNA CANCION
-clientRouter.post("/", [upload.single("image")], createClient);
+// CREAR UNA PERSONA
+clientRouter.post("/", [upload.single("image")], [isAuth], createClient);
 
-// UPDATE
-clientRouter.patch("/:id", [upload.single("image")], updateClient);
+// MODIFICAR UNA PERSONA
+clientRouter.patch("/:id", [upload.single("image")], [isAuth], updateClient);
 
-// DELETE
-clientRouter.delete("/:id", deleteClient);
+// BORRAR UNA PERSONA
+clientRouter.delete("/:id", [isAuth], deleteClient);
 
 module.exports = clientRouter;

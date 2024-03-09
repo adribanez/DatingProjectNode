@@ -1,10 +1,6 @@
 const Client = require("../model/dating.model");
 const HTTPSTATUSCODE = require("../../utils/httpStatusCode");
 
-// FUNCIONES CRUD
-
-// - CONSULTAR
-
 // -- UNA PERSONA
 const getClient = async (req, res, next) => {
   try {
@@ -71,7 +67,6 @@ const createClient = async (req, res, next) => {
       match,
       image: image,
     });
-    //1. CREAR UNA VARIABLE (TIPO TRACK) QUE RECOJA LOS DATOS QUE ENVÍA EL USUARIO.
 
     //2.GUARDAR EN BBDD
     await client.save();

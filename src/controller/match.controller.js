@@ -1,11 +1,8 @@
 const Match = require("../model/match.model");
 const HTTPSTATUSCODE = require("../../utils/httpStatusCode");
 const Dating = require("../model/dating.model");
-// FUNCIONES CRUD
 
-// - CONSULTAR
-
-// -- UNA PERSONA
+// -- UN MATCH
 const getMatch = async (req, res, next) => {
   try {
     //1. OBTENGO LA ID QUE HA SOLICITADO EL USUARIO
@@ -23,7 +20,7 @@ const getMatch = async (req, res, next) => {
   }
 };
 
-// -- TODAS LAS PERSONAS
+// -- TODAS LOS MATCHS
 const getMatchs = async (req, res, next) => {
   try {
     //1. BUSCO TODAS LAS PERSONAA
@@ -39,7 +36,7 @@ const getMatchs = async (req, res, next) => {
   }
 };
 
-// - CREAR PERSONA
+// - CREAR MATCH
 
 const createMatch = async (req, res, next) => {
   const clientId = req.params.clientId;
@@ -64,7 +61,7 @@ const createMatch = async (req, res, next) => {
   }
 };
 
-// - MODIFICAR
+// - MODIFICAR MATCH
 
 const updateMatch = async (req, res, next) => {
   try {
@@ -93,7 +90,7 @@ const updateMatch = async (req, res, next) => {
   }
 };
 
-// - DELETE
+// - BORRAR MATCH
 
 const deleteMatch = async (req, res, next) => {
   try {
